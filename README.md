@@ -45,7 +45,7 @@ File: 1b)Graph.py
 
 Assumption: IVs fixed, SOFR as interest rate
 
-![PnL_vs_SPY.png](Pnl_vs_SPY.png)
+![PnL_vs_SPY.png](graphs/Pnl_vs_SPY.png)
 <br>Put Position: 1000
 <br>Call Position: 2281
 <br>Cash position: 203 (ignore its return)
@@ -70,7 +70,7 @@ Assumption:
 <br> 95% IV - 105% IV = 8% (Further investigation below)
 
 Grid of different spot prices and IVs on 2025/05/09
-![PnL_vs_Spot_and_IV.png](PnL_vs_Spot_and_IV.png)
+![PnL_vs_Spot_and_IV.png](graphs/PnL_vs_Spot_and_IV.png)
 From this graph we can see that the change in Pnl is more dependent on the price changes of 
 Spot prices at T-1 instead of the volatility.
 
@@ -107,7 +107,6 @@ and political factors)
 File: 2a)Heston_calibration.py, 2a)SPY_Heston.py
 
 Use data before 04/10/2025 to determine the parameters:
-<div align="center">
 
 | Parameter |    Value   |
 |-----------|-----------:|
@@ -117,7 +116,7 @@ Use data before 04/10/2025 to determine the parameters:
 | rho       |   -0.7  |
 | v0        |    0.060282|
 
-![SPY_Heston_Prediction.png](SPY_Heston_Prediction.png)
+![SPY_Heston_Prediction.png](graphs/SPY_Heston_Prediction.png)
 
 | Statistic   | SPY Price  |
 |-------------|-----------:|
@@ -125,7 +124,6 @@ Use data before 04/10/2025 to determine the parameters:
 | 5th%ile    | 467.73|
 | 95th%ile   | 617.34 |
 
-</div>
 <br>
 
 #### - SABR for IV
@@ -200,7 +198,7 @@ better compare to the trade above.
 Let's use 90% moneyness Put:
 SPY US 05/16/25 P494 Equity: 5.54
 
-![PutSPread_Portfolio.png](PutSPread_Portfolio.png)
+![PutSPread_Portfolio.png](graphs/PutSPread_Portfolio.png)
 
 From the graph we can see that they have similar PnL structure, but 
 the new portfolio has smaller risk and return due to less initial capital from 
