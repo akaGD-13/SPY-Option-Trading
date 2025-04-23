@@ -106,7 +106,8 @@ and political factors)
 #### - Heston for SPY
 File: 2a)Heston_calibration.py, 2a)SPY_Heston.py
 
-Use data before 04/10/2025 to determine the parameters:
+Use data on 04/09/2025 to determine the parameters 
+(can expand the residual function to include more data points):
 
 | Parameter |    Value   |
 |-----------|-----------:|
@@ -130,7 +131,8 @@ Use data before 04/10/2025 to determine the parameters:
 File: 2a)IV_SABR.py
 
 β = 0.5
-<br>α,ρ,ν are derived using the Least Square method with data on 04/09/2025
+<br>α,ρ,ν are derived using the Least Square method with data on 04/09/2025 
+(can expand the residual function to include more data points)
 
 | Strike | Predicted IV on 2025‑05‑09 |
 |-------:|---------------------------:|
@@ -224,8 +226,8 @@ which are not the current situation where there are lots of uncertainty in the m
 <summary><h2>Part 4: Further Improvements </h2></summary>
 
 1. Add Interest Rate Model
-2. Add Macro Factors
-3. More historical data and train model with periods that has similar situation
-4. More detailed report about the models: backtest, calibration quality, and more advanced model
+2. More robust model parameter calibration: more historical data and train model with periods that have similar situation
+3. More detailed report about the models: backtest, calibration quality, and more advanced model
+4. Consider macro factors
 
 </details>
