@@ -2,8 +2,6 @@
 
 Guangda Fei, Apr 20, 2025 
 
-Fir Tree Partners Interview Project
-
 <details>
 <summary><h2>data</h2></summary>
 
